@@ -1,4 +1,4 @@
-package com.hitcyclone317.projectAndroidCuoiKhoa;
+package com.hitcyclone317.projectAndroidCuoiKhoa.RCAdapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,15 +10,25 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hitcyclone317.projectAndroidCuoiKhoa.Model.Subject;
+import com.hitcyclone317.projectAndroidCuoiKhoa.R;
+import com.hitcyclone317.projectAndroidCuoiKhoa.RecyclerViewOnClickItem;
+
 import java.util.List;
 
-public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHolder> {
+public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHolder>
+                            implements RecyclerViewOnClickItem {
     Context context;
-    List<String> subjects;
+    List<Subject> subjects;
 
-    public SubjectAdapter(Context context, List<String> subjects) {
+    public SubjectAdapter(Context context, List<Subject> subjects) {
         this.context = context;
         this.subjects = subjects;
+    }
+
+    @Override
+    public void OnClickItem(int position) {
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -40,8 +50,9 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String subject = subjects.get(position);
-        holder.tvSubject.setText(subject);
+        Subject subject = subjects.get(position);
+        holder.tvSubject.setText(subject.getSubjects());
+        holder.IVBooks.setImageResource(subject.getResid());
     }
 
     @Override

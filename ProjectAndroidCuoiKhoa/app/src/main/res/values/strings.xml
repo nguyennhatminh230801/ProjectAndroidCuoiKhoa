@@ -8,7 +8,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Trang Chủ</string>
+    <string name="menu_education">Học Kết Hợp</string>
+    <string name="menu_contest">Thi Trên Máy</string>
+    <string name="menu_calendar">Thời Gian Biểu</string>
+    <string name="menu_class">Lớp Học</string>
+
+    <string name="title_activity_giao_dien_chinh">GiaoDienChinh</string>
 </resources>

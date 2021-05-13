@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectAndroidCuoiKhoa">
-
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".GiaoDienChinh"
+            android:label="@string/title_activity_giao_dien_chinh"
+            android:theme="@style/Theme.ProjectAndroidCuoiKhoa.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
