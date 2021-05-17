@@ -1,10 +1,9 @@
-package com.hitcyclone317.projectAndroidCuoiKhoa.FragmentMenu;
+package com.hitcyclone317.projectAndroidCuoiKhoa.Lesson;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,21 +11,26 @@ import androidx.fragment.app.Fragment;
 
 import com.hitcyclone317.projectAndroidCuoiKhoa.R;
 
-public class ClassFragment extends Fragment {
-    public static ClassFragment newInstance() {
-        
+import org.jetbrains.annotations.NotNull;
+
+public class LessonUnitFragment extends Fragment {
+    View root;
+
+    public static LessonUnitFragment newInstance() {
+
         Bundle args = new Bundle();
-        
-        ClassFragment fragment = new ClassFragment();
+
+        LessonUnitFragment fragment = new LessonUnitFragment();
         fragment.setArguments(args);
         return fragment;
     }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_class, container, false);
-        TextView textView = root.findViewById(R.id.text_fragment_class);
-        textView.setText("This is class fragment");
+        root = inflater.inflate(R.layout.fragment_lesson_unit, container, false);
+
+
         return root;
     }
 }

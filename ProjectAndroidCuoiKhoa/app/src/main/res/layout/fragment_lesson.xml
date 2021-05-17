@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentMenu.LearningFragment">
+    tools:context=".Lesson.LessonFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RCSubject"
+        android:id="@+id/RCLesson"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="50dp"
@@ -16,15 +16,14 @@
         android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>
-
     <ImageView
         android:id="@+id/eopLogo"
         android:layout_width="133dp"
         android:layout_height="55dp"
         android:src="@drawable/ic_eop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/RCSubject"
-        app:layout_constraintStart_toStartOf="@+id/RCSubject"
-        app:layout_constraintTop_toBottomOf="@+id/RCSubject">
+        app:layout_constraintEnd_toEndOf="@+id/RCLesson"
+        app:layout_constraintStart_toStartOf="@+id/RCLesson"
+        app:layout_constraintTop_toBottomOf="@+id/RCLesson">
     </ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>

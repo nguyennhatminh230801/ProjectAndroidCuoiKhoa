@@ -13,7 +13,14 @@ import androidx.fragment.app.Fragment;
 import com.hitcyclone317.projectAndroidCuoiKhoa.R;
 
 public class CalendarFragment extends Fragment {
-
+    public static CalendarFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        CalendarFragment fragment = new CalendarFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -14,7 +14,14 @@ import com.hitcyclone317.projectAndroidCuoiKhoa.R;
 
 
 public class ContestFragment extends Fragment {
-
+    public static ContestFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        ContestFragment fragment = new ContestFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

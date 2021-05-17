@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/item_background"
-    android:layout_marginBottom="20dp">
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="2dp"
+    card_view:strokeColor="@color/black"
+    card_view:strokeWidth="5dp">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ImageView
         android:id="@+id/books"
         android:layout_width="wrap_content"
@@ -12,9 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:src="@drawable/ic_book">
-
     </ImageView>
-
     <TextView
         android:layout_below="@+id/books"
         android:layout_centerHorizontal="true"
@@ -26,4 +31,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     </TextView>
-</RelativeLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

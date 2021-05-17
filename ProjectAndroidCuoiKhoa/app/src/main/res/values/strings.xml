@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">ProjectAndroidCuoiKhoa</string>
+    <string name="app_name">App Học Tiếng Anh</string>
     <string name="title_activity_main2">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">App Học Tiếng Anh</string>
+    <string name="nav_header_subtitle">Một Sản Phẩm Của Nhóm Minh-Huế-Sang</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 

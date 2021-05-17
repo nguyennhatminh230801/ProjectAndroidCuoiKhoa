@@ -1,0 +1,99 @@
+package com.hitcyclone317.projectAndroidCuoiKhoa.RCAdapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.hitcyclone317.projectAndroidCuoiKhoa.Model.EnglishSkill;
+import com.hitcyclone317.projectAndroidCuoiKhoa.Model.EnglishTask;
+import com.hitcyclone317.projectAndroidCuoiKhoa.R;
+import com.hitcyclone317.projectAndroidCuoiKhoa.RecyclerViewOnClickItem;
+
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EnglishSkillAdapter extends RecyclerView.Adapter<EnglishSkillAdapter.ESViewHolder> {
+    Context context;
+    List<EnglishSkill> englishSkillList;
+    RecyclerViewOnClickItem recyclerViewOnClickItem;
+
+    public EnglishSkillAdapter(Context context, List<EnglishSkill> englishSkillList, RecyclerViewOnClickItem recyclerViewOnClickItem) {
+        this.context = context;
+        this.englishSkillList = englishSkillList;
+        this.recyclerViewOnClickItem = recyclerViewOnClickItem;
+    }
+
+    @NonNull
+    @NotNull
+    @Override
+    public ESViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
+        return new ESViewHolder(LayoutInflater.from(context).inflate(R.layout.english_skill_item, parent, false));
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull @NotNull ESViewHolder holder, int position) {
+        EnglishSkill englishSkill = englishSkillList.get(position);
+        RecyclerView.RecycledViewPool recycledViewPool = new RecyclerView.RecycledViewPool();
+        holder.EngSkillName.setText(englishSkill.getEnglishSkillName());
+
+        EnglishTaskAdapter englishTaskAdapter;
+
+        englishTaskAdapter = new EnglishTaskAdapter(context, englishSkill.getTaskOfEngLishSkill(), new RecyclerViewOnClickItem() {
+            @Override
+            public void OnClickItem(int position) {
+//                Toast.makeText(context, "Position: " + position, Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context,
+                LinearLayoutManager.VERTICAL, false);
+        linearLayoutManager.setInitialPrefetchItemCount(englishSkill.getTaskOfEngLishSkill().size());
+
+        holder.RCEnglishTask.setLayoutManager(linearLayoutManager);
+        holder.RCEnglishTask.setAdapter(englishTaskAdapter);
+        holder.RCEnglishTask.setRecycledViewPool(recycledViewPool);
+
+        boolean isExpanded = englishSkill.isVisible();
+
+        holder.ExpandableLayout.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
+    }
+
+    @Override
+    public int getItemCount() {
+        return englishSkillList.size();
+    }
+
+    public class ESViewHolder extends RecyclerView.ViewHolder {
+        private TextView EngSkillName;
+        private RecyclerView RCEnglishTask;
+        private RelativeLayout ExpandableLayout;
+
+        public ESViewHolder(@NonNull @NotNull View itemView) {
+            super(itemView);
+            EngSkillName = itemView.findViewById(R.id.EngSkillName);
+            RCEnglishTask = itemView.findViewById(R.id.RCEnglishTask);
+            ExpandableLayout = itemView.findViewById(R.id.ExpandableLayout);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    recyclerViewOnClickItem.OnClickItem(getAdapterPosition());
+                }
+            });
+        }
+    }
+}

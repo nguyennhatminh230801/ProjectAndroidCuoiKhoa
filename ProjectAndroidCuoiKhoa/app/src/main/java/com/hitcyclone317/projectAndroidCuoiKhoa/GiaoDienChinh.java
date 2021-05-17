@@ -40,6 +40,9 @@ public class GiaoDienChinh extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
+    //Task: Thực Hiện Việc Back Press giữa các Fragment
+    //Mô tả: Khi bấm nút Back, tự động quay về Fragment trước đó
+    //https://stackoverflow.com/questions/5448653/how-to-implement-onbackpressed-in-fragments
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

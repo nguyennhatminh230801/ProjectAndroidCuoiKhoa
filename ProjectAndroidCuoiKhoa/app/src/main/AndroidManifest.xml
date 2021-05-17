@@ -11,7 +11,7 @@
         android:theme="@style/Theme.ProjectAndroidCuoiKhoa">
         <activity
             android:name=".GiaoDienChinh"
-            android:label="@string/title_activity_giao_dien_chinh"
+            android:label="@string/app_name"
             android:theme="@style/Theme.ProjectAndroidCuoiKhoa.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

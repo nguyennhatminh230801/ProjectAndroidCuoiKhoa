@@ -12,7 +12,13 @@ import androidx.fragment.app.Fragment;
 import com.hitcyclone317.projectAndroidCuoiKhoa.R;
 
 public class HomeFragment extends Fragment {
+    public static HomeFragment newInstance() {
+        Bundle args = new Bundle();
 
+        HomeFragment fragment = new HomeFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
