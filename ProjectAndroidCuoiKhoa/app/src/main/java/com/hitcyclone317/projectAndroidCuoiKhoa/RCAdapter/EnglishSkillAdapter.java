@@ -28,12 +28,13 @@ import java.util.List;
 public class EnglishSkillAdapter extends RecyclerView.Adapter<EnglishSkillAdapter.ESViewHolder> {
     Context context;
     List<EnglishSkill> englishSkillList;
-    RecyclerViewOnClickItem recyclerViewOnClickItem;
+    RecyclerViewOnClickItem recyclerViewOnClickItem, ChildOnClickItem;
 
-    public EnglishSkillAdapter(Context context, List<EnglishSkill> englishSkillList, RecyclerViewOnClickItem recyclerViewOnClickItem) {
+    public EnglishSkillAdapter(Context context, List<EnglishSkill> englishSkillList, RecyclerViewOnClickItem recyclerViewOnClickItem, RecyclerViewOnClickItem childOnClickItem) {
         this.context = context;
         this.englishSkillList = englishSkillList;
         this.recyclerViewOnClickItem = recyclerViewOnClickItem;
+        ChildOnClickItem = childOnClickItem;
     }
 
     @NonNull
@@ -54,8 +55,7 @@ public class EnglishSkillAdapter extends RecyclerView.Adapter<EnglishSkillAdapte
         englishTaskAdapter = new EnglishTaskAdapter(context, englishSkill.getTaskOfEngLishSkill(), new RecyclerViewOnClickItem() {
             @Override
             public void OnClickItem(int position) {
-//                Toast.makeText(context, "Position: " + position, Toast.LENGTH_SHORT).show();
-
+                ChildOnClickItem.OnClickItem(position);
             }
         });
 

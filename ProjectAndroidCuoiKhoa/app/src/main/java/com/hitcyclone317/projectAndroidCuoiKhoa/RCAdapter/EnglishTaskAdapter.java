@@ -78,8 +78,6 @@ public class EnglishTaskAdapter extends RecyclerView.Adapter<EnglishTaskAdapter.
                 @Override
                 public void onClick(View v) {
                     recyclerViewOnClickItem.OnClickItem(getAdapterPosition());
-
-
                 }
             });
         }
