@@ -1,0 +1,112 @@
+[
+    {
+        "sele_exer_id": "1",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "2",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "3",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "4",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "5",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "6",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "7",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "8",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "9",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    },
+    {
+        "sele_exer_id": "10",
+        "sele_exer_code": "abcde",
+        "title": "Choose the verb:",
+        "select_a": "cat",
+        "select_b": "dog",
+        "select_c": "select",
+        "select_d": "mouse",
+        "answer": "2",
+        "statement_code": "sta123"
+    }
+]
