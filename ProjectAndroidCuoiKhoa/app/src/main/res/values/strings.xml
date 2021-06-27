@@ -13,6 +13,22 @@
     <string name="menu_contest">Thi Trên Máy</string>
     <string name="menu_calendar">Thời Gian Biểu</string>
     <string name="menu_class">Lớp Học</string>
+    <string name="menu_account">Tài Khoản</string>
 
     <string name="title_activity_giao_dien_chinh">GiaoDienChinh</string>
+
+    <string name="tieng_anh_cntt">Tiếng Anh Công Nghệ Thông Tin</string>
+    <string name="ten_tai_khoan">Tên Tài Khoản</string>
+    <string name="ma_sinh_vien">Mã sinh viên</string>
+    <string name="password">******</string>
+    <string name="nhap_vao_msv">Nhập Vào Mã Sinh Viên</string>
+    <string name="mat_khau">Mật Khẩu</string>
+    <string name="nhap_vao_mk">Nhập Vào Mật Khẩu</string>
+    <string name="luu_mat_khau">Lưu Mật Khẩu</string>
+
+    <string name="ten_dang_nhap_bi_sai">Tên đăng nhập bị sai!!</string>
+    <string name="mat_khau_bi_sai">"Mật khẩu bị sai!!"</string>
+
+    <string name="btnSubmit">Nộp Bài</string>
+    <string name="btnSeeAnswer">Xem Kết Qủa</string>
 </resources>

@@ -7,6 +7,9 @@ public class EnglishTask {
     String NameOfTask;
     StateOfStudy stateOfStudy;
 
+    public EnglishTask() {
+    }
+
     public EnglishTask(int resID, String nameOfTask, StateOfStudy stateOfStudy) {
         ResID = resID;
         NameOfTask = nameOfTask;

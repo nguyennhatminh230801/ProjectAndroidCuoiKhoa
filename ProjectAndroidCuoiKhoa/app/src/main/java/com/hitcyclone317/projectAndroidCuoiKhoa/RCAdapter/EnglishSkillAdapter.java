@@ -1,36 +1,35 @@
 package com.hitcyclone317.projectAndroidCuoiKhoa.RCAdapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hitcyclone317.projectAndroidCuoiKhoa.ChildClickInterface;
 import com.hitcyclone317.projectAndroidCuoiKhoa.Model.EnglishSkill;
-import com.hitcyclone317.projectAndroidCuoiKhoa.Model.EnglishTask;
 import com.hitcyclone317.projectAndroidCuoiKhoa.R;
 import com.hitcyclone317.projectAndroidCuoiKhoa.RecyclerViewOnClickItem;
+import com.hitcyclone317.projectAndroidCuoiKhoa.UnitAdapter.LessonUnitActivity;
 
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class EnglishSkillAdapter extends RecyclerView.Adapter<EnglishSkillAdapter.ESViewHolder> {
     Context context;
     List<EnglishSkill> englishSkillList;
-    RecyclerViewOnClickItem recyclerViewOnClickItem, ChildOnClickItem;
+    RecyclerViewOnClickItem recyclerViewOnClickItem;
+    ChildClickInterface ChildOnClickItem;
 
-    public EnglishSkillAdapter(Context context, List<EnglishSkill> englishSkillList, RecyclerViewOnClickItem recyclerViewOnClickItem, RecyclerViewOnClickItem childOnClickItem) {
+    public EnglishSkillAdapter(Context context, List<EnglishSkill> englishSkillList, RecyclerViewOnClickItem recyclerViewOnClickItem, ChildClickInterface childOnClickItem) {
         this.context = context;
         this.englishSkillList = englishSkillList;
         this.recyclerViewOnClickItem = recyclerViewOnClickItem;
@@ -54,8 +53,8 @@ public class EnglishSkillAdapter extends RecyclerView.Adapter<EnglishSkillAdapte
 
         englishTaskAdapter = new EnglishTaskAdapter(context, englishSkill.getTaskOfEngLishSkill(), new RecyclerViewOnClickItem() {
             @Override
-            public void OnClickItem(int position) {
-                ChildOnClickItem.OnClickItem(position);
+            public void OnClickItem(int position1) {
+                ChildOnClickItem.onChildClickInterface(position, position1);
             }
         });
 
@@ -94,6 +93,7 @@ public class EnglishSkillAdapter extends RecyclerView.Adapter<EnglishSkillAdapte
                     recyclerViewOnClickItem.OnClickItem(getAdapterPosition());
                 }
             });
+
         }
     }
 }

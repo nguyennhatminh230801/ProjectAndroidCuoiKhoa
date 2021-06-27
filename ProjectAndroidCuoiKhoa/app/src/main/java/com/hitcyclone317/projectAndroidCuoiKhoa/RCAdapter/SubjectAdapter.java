@@ -60,11 +60,11 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
         holder.IVBooks.setImageResource(subject.getResid());
 
         if(subject.getStateOfStudy() == StateOfStudy.PASSED){
-            holder.IVBooks.setColorFilter(Color.parseColor("#008000"));
+            holder.IVBooks.setColorFilter(R.color.green);
         }
 
         if(subject.getStateOfStudy() == StateOfStudy.FAILED){
-            holder.IVBooks.setColorFilter(Color.parseColor("#FF0000"));
+            holder.IVBooks.setColorFilter(R.color.red);
         }
     }
 

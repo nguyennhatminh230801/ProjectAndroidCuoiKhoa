@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".DangNhap">
+
+    <TextView
+        android:id="@+id/tieng_anh_cntt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tieng_anh_cntt"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:gravity="top"
+        android:lineHeight="24sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_1"
+        android:layout_width="326dp"
+        android:layout_height="410dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="447dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ten_tai_khoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ten_tai_khoan" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/nhap_vao_tai_khoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ten_tai_khoan"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/nhap_vao_msv" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mat_khau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nhap_vao_tai_khoan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mat_khau"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/nhap_vao_mat_khau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mat_khau"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/nhap_vao_mk" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/luu_mat_khau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nhap_vao_mat_khau"
+                android:layout_marginLeft="10dp"
+                android:text="@string/luu_mat_khau">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/luu_mat_khau"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rectangle_3"
+                android:text="Đăng Nhập"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnForgetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/btnLogin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rectangle_4"
+                android:text="Quên Mật Khẩu"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/eopLogo"
+        android:layout_below="@+id/card_view_1"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_eop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+</RelativeLayout>

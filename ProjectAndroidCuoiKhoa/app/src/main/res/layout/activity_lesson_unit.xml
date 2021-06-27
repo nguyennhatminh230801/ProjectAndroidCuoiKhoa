@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnitAdapter.LessonUnitActivity"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/tvNameOfTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Presentation1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/tvNameOfTask"
+        android:id="@+id/RCAnswerForm"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RCAnswerForm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_3"
+        android:text="@string/btnSubmit"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeeAnswer"
+        android:layout_below="@+id/RCAnswerForm"
+        android:layout_toRightOf="@+id/btnSubmit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSeeAnswer"
+        android:textSize="15sp"
+        android:background="@drawable/rectangle_4"/>
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.hitcyclone317.projectAndroidCuoiKhoa.RCAdapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -25,10 +26,6 @@ public class EnglishTaskAdapter extends RecyclerView.Adapter<EnglishTaskAdapter.
     List<EnglishTask> englishTaskList;
     RecyclerViewOnClickItem recyclerViewOnClickItem;
 
-    public interface OnClickChildItem {
-
-    }
-
     public EnglishTaskAdapter(Context context, List<EnglishTask> englishTaskList, RecyclerViewOnClickItem recyclerViewOnClickItem) {
         this.context = context;
         this.englishTaskList = englishTaskList;
@@ -42,6 +39,7 @@ public class EnglishTaskAdapter extends RecyclerView.Adapter<EnglishTaskAdapter.
         return new ETViewHolder(LayoutInflater.from(context).inflate(R.layout.english_task_item, parent, false));
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(@NonNull @NotNull ETViewHolder holder, int position) {
         EnglishTask englishTask = englishTaskList.get(position);
@@ -50,13 +48,13 @@ public class EnglishTaskAdapter extends RecyclerView.Adapter<EnglishTaskAdapter.
         holder.tvEngTask.setText(englishTask.getNameOfTask());
 
         if(englishTask.getStateOfStudy() == StateOfStudy.PASSED){
-            holder.ImgViewEngTask.setColorFilter(Color.parseColor("#008000"));
-            holder.tvEngTask.setTextColor(Color.parseColor("#008000"));
+            holder.ImgViewEngTask.setColorFilter(R.color.green);
+            holder.tvEngTask.setTextColor(R.color.green);
         }
 
         if(englishTask.getStateOfStudy() == StateOfStudy.FAILED){
-            holder.ImgViewEngTask.setColorFilter(Color.parseColor("#FF0000"));
-            holder.tvEngTask.setTextColor(Color.parseColor("#FF0000"));
+            holder.ImgViewEngTask.setColorFilter(R.color.red);
+            holder.tvEngTask.setTextColor(R.color.red);
         }
     }
 

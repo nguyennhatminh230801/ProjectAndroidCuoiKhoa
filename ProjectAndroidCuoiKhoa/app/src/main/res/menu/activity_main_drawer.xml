@@ -27,5 +27,10 @@
             android:icon="@drawable/ic_school"
             android:title="@string/menu_class"
             />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="@string/menu_account"
+            />
     </group>
 </menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvQuestionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="question 1:"
+            android:textAllCaps="true"
+            android:textColor="@color/lightblue"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvInfoQuestion"
+            android:layout_below="@+id/tvQuestionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A mainframe is used for a large scale computing purposes which is a high – performance computer."
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/rdGroupChoose"
+            android:layout_below="@+id/tvInfoQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCauA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A mainframe is used for a large scale computing purposes which is a high – performance computer."/>
+            <RadioButton
+                android:id="@+id/rbCauB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A mainframe is used for a large scale computing purposes which is a high – performance computer."/>
+            <RadioButton
+                android:id="@+id/rbCauC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A mainframe is used for a large scale computing purposes which is a high – performance computer."/>
+            <RadioButton
+                android:id="@+id/rbCauD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A mainframe is used for a large scale computing purposes which is a high – performance computer."/>
+        </RadioGroup>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

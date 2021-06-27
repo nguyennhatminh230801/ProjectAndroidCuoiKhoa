@@ -7,6 +7,9 @@ public class Subject {
     String subjects;
     StateOfStudy stateOfStudy;
 
+    public Subject() {
+    }
+
     public Subject(int resid, String subjects, StateOfStudy stateOfStudy) {
         Resid = resid;
         this.subjects = subjects;

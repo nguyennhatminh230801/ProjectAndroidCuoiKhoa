@@ -1,5 +1,6 @@
 package com.hitcyclone317.projectAndroidCuoiKhoa.Lesson;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hitcyclone317.projectAndroidCuoiKhoa.ChildClickInterface;
 import com.hitcyclone317.projectAndroidCuoiKhoa.Model.EnglishSkill;
 import com.hitcyclone317.projectAndroidCuoiKhoa.Model.EnglishTask;
 import com.hitcyclone317.projectAndroidCuoiKhoa.R;
@@ -20,11 +22,12 @@ import com.hitcyclone317.projectAndroidCuoiKhoa.RCAdapter.EnglishSkillAdapter;
 
 import com.hitcyclone317.projectAndroidCuoiKhoa.RecyclerViewOnClickItem;
 import com.hitcyclone317.projectAndroidCuoiKhoa.StateOfStudy;
+import com.hitcyclone317.projectAndroidCuoiKhoa.UnitAdapter.LessonUnitActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class EnglishSkillFragment extends Fragment {
+public class EnglishSkillFragment<englishSkillAdapter> extends Fragment {
     View root;
     List<EnglishSkill> englishSkillList;
     EnglishSkillAdapter englishSkillAdapter;
@@ -110,21 +113,27 @@ public class EnglishSkillFragment extends Fragment {
 
         AddData();
 
-        englishSkillAdapter = new EnglishSkillAdapter(container.getContext(), englishSkillList, new RecyclerViewOnClickItem() {
-            @Override
-            public void OnClickItem(int position) {
-                EnglishSkill englishSkill = englishSkillList.get(position);
-                englishSkill.setVisible(!englishSkill.isVisible());
-                englishSkillAdapter.notifyItemChanged(position);
+        assert container != null;
+        englishSkillAdapter = new EnglishSkillAdapter(container.getContext(), englishSkillList, position -> {
+            EnglishSkill englishSkill = englishSkillList.get(position);
+            englishSkill.setVisible(!englishSkill.isVisible());
+            englishSkillAdapter.notifyItemChanged(position);
 
-            }
-        }, new RecyclerViewOnClickItem() {
-            @Override
-            public void OnClickItem(int position) {
-                Toast.makeText(container.getContext(), String.valueOf(position), Toast.LENGTH_SHORT).show();
-            }
-        });
+        }, (ParentAdapterPosition, ChildAdapterPosition) -> {
+            Intent intent = new Intent(container.getContext(), LessonUnitActivity.class);
 
+            String res1 = englishSkillList.get(ParentAdapterPosition).getEnglishSkillName();
+            String res2 = englishSkillList.get(ParentAdapterPosition).getTaskOfEngLishSkill().get(ChildAdapterPosition).getNameOfTask();
+
+            intent.putExtra("EngSkill", res1);
+            intent.putExtra("Engtask", res2);
+
+            startActivity(intent);
+
+//            Toast.makeText(container.getContext(), String.valueOf(ParentAdapterPosition)
+//                    + " " + String.valueOf(ChildAdapterPosition), Toast.LENGTH_SHORT).show();
+        }
+        );
 
         RCEnglishSkill.setAdapter(englishSkillAdapter);
         RCEnglishSkill.setLayoutManager(new LinearLayoutManager(container.getContext()));

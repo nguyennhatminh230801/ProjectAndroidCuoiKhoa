@@ -7,6 +7,9 @@ public class EnglishSkill {
     List<EnglishTask> TaskOfEngLishSkill;
     boolean isVisible;
 
+    public EnglishSkill() {
+    }
+
     public EnglishSkill(String englishSkillName, List<EnglishTask> taskOfEngLishSkill, boolean isVisible) {
         EnglishSkillName = englishSkillName;
         TaskOfEngLishSkill = taskOfEngLishSkill;

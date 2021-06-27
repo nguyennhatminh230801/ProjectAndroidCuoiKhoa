@@ -9,6 +9,9 @@ public class Lesson {
     boolean TestOfLesson;
     StateOfStudy stateOfStudy;
 
+    public Lesson() {
+    }
+
     public Lesson(int resID, String lessonName, int numOfTask, boolean testOfLesson, StateOfStudy stateOfStudy) {
         ResID = resID;
         LessonName = lessonName;

@@ -71,11 +71,11 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
         }
 
         if(lesson.getStateOfStudy() == StateOfStudy.PASSED){
-            holder.IVLesson.setColorFilter(Color.parseColor("#008000"));
+            holder.IVLesson.setColorFilter(R.color.green);
         }
 
         if(lesson.getStateOfStudy() == StateOfStudy.FAILED){
-            holder.IVLesson.setColorFilter(Color.parseColor("#008000"));
+            holder.IVLesson.setColorFilter(R.color.red);
         }
     }
 
