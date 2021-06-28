@@ -25,6 +25,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LessonUnitActivity extends AppCompatActivity {
@@ -46,7 +47,7 @@ public class LessonUnitActivity extends AppCompatActivity {
         getMappingItem();
 
         RequestQueue queue = Volley.newRequestQueue(this);
-
+        typeVocabularyList = new ArrayList<>();
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -63,7 +64,6 @@ public class LessonUnitActivity extends AppCompatActivity {
                         );
 
                         typeVocabularyList.add(typeVocabulary);
-                        //Toast.makeText(getBaseContext(), jsonObject.getString("Title"), Toast.LENGTH_SHORT).show();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -83,13 +83,13 @@ public class LessonUnitActivity extends AppCompatActivity {
 
         queue.add(jsonArrayRequest);
 
-        btnSubmit.setOnClickListener(v -> {
-
-        });
-
-        btnSeeAnswer.setOnClickListener(v -> {
-
-        });
+//        btnSubmit.setOnClickListener(v -> {
+//
+//        });
+//
+//        btnSeeAnswer.setOnClickListener(v -> {
+//
+//        });
     }
 
 
