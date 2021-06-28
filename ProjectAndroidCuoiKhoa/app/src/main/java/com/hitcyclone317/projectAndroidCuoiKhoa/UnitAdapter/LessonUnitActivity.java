@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -35,7 +36,7 @@ public class LessonUnitActivity extends AppCompatActivity {
     List<TypeMultipleChoice> multipleChoiceList;
 
     TypeVocabularyAdapter typeVocabularyAdapter;
-    String URL = "https://raw.githubusercontent.com/vippes13/ProjectAndroidCuoiKhoa/main/fill_info.json";
+    String URL = "https://raw.githubusercontent.com/vippes13/ProjectAndroidCuoiKhoa/main/vocabulary.json";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,14 +55,15 @@ public class LessonUnitActivity extends AppCompatActivity {
                         JSONObject jsonObject = response.getJSONObject(i);
 
                         TypeVocabulary typeVocabulary = new TypeVocabulary(
-                                jsonObject.getString("voca_code"),
-                                jsonObject.getString("audio_link"),
-                                jsonObject.getString("image_link"),
-                                jsonObject.getString("vocabulary"),
-                                jsonObject.getString("description")
+                                jsonObject.getString("Title"),
+                                jsonObject.getString("AudioLink"),
+                                jsonObject.getString("ImageLink"),
+                                jsonObject.getString("VietnamTrans"),
+                                jsonObject.getString("Description")
                         );
 
                         typeVocabularyList.add(typeVocabulary);
+                        //Toast.makeText(getBaseContext(), jsonObject.getString("Title"), Toast.LENGTH_SHORT).show();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -75,7 +77,7 @@ public class LessonUnitActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                error.printStackTrace();
             }
         });
 
