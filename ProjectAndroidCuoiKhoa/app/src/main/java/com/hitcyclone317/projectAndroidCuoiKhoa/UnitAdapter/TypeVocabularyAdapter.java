@@ -53,16 +53,16 @@ public class TypeVocabularyAdapter extends RecyclerView.Adapter<TypeVocabularyAd
         holder.tvVietnameseTrans.setText(typeVocabulary.getVietnameseTrans());
         holder.tvVocab.setText(typeVocabulary.getDescription());
 
-        MediaPlayer mediaPlayer = new MediaPlayer();
-
-        try {
-            mediaPlayer.setDataSource(typeVocabulary.getAudioLink());
-            mediaPlayer.prepare();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         holder.btnPlayAudio.setOnClickListener(v -> {
+            MediaPlayer mediaPlayer = new MediaPlayer();
+
+            try {
+                mediaPlayer.setDataSource(typeVocabulary.getAudioLink());
+                mediaPlayer.prepare();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
             mediaPlayer.start();
         });
     }

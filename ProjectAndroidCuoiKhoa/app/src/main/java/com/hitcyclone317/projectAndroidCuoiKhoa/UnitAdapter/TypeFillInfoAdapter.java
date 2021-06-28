@@ -21,6 +21,14 @@ public class TypeFillInfoAdapter extends RecyclerView.Adapter<TypeFillInfoAdapte
     Context context;
     List<TypeFillInfo> typeFillInfoList;
 
+    public TypeFillInfoAdapter() {
+    }
+
+    public TypeFillInfoAdapter(Context context, List<TypeFillInfo> typeFillInfoList) {
+        this.context = context;
+        this.typeFillInfoList = typeFillInfoList;
+    }
+
     @NonNull
     @NotNull
     @Override
