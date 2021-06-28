@@ -1,92 +1,37 @@
 [
     {
-        "voca_exer_id": "1",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
+        "Title" : "Computer science",
+        "AudioLink" : "https://c.eop.edu.vn/dnn/eop/dictionary/1626/48d6082445t5149l4.mp3",
+        "ImageLink" : "https://c.eop.edu.vn/media/auto/120/dictionary/1834/520d1141144t4540l1.jpg",
+        "VietnamTrans" : "Khoa học máy tính",
+        "Description" : "She is going to earn a degree in computer science because it's necessary in her future job."
     },
     {
-        "voca_exer_id": "2",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
+        "Title" : "Software engineering",
+        "AudioLink" : "https://c.eop.edu.vn/dnn/eop/dictionary/1834/520d1140242t9777l8.mp3",
+        "ImageLink" : "https://c.eop.edu.vn/media/auto/120/dictionary/1834/520d1140145t1103l4.jpg",
+        "VietnamTrans" : "Kỹ thuật phần mềm",
+        "Description" : "A study in software engineering results in obtaining an engineer diploma."
     },
     {
-        "voca_exer_id": "3",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
+        "Title" : "Information system",
+        "AudioLink" : "https://c.eop.edu.vn/dnn/eop/dictionary/1834/520d1140746t6661l8.mp3",
+        "ImageLink" : "https://c.eop.edu.vn/media/auto/120/dictionary/1834/520d1140711t7424l9.png",
+        "VietnamTrans" : "Hệ thống thông tin",
+        "Description" : "The computer based information system is developed by the people and for the people."
     },
     {
-        "voca_exer_id": "4",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
+        "Title" : "Communications and Computer Networks",
+        "AudioLink" : "https://c.eop.edu.vn/dnn/eop/dictionary/1834/520d1141535t1509l6.mp3",
+        "ImageLink" : "https://c.eop.edu.vn/media/auto/120/dictionary/1834/520d1141404t5303l2.jpg",
+        "VietnamTrans" : "Truyền thông và mạng máy tính",
+        "Description" : "The Communications and Computer Networks Engineering program is offered at Hanoi University of Industry."
     },
     {
-        "voca_exer_id": "5",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
-    },
-    {
-        "voca_exer_id": "6",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
-    },
-    {
-        "voca_exer_id": "7",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
-    },
-    {
-        "voca_exer_id": "8",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
-    },
-    {
-        "voca_exer_id": "9",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
-    },
-    {
-        "voca_exer_id": "10",
-        "voca_code": "abcdef",
-        "audio_link": "google.com",
-        "image_link": "facebook.com",
-        "vocabulary": "network(n): Mạng",
-        "description": "A network consists of two or more computers that are linked in order to share resources",
-        "statement_code": "sta1"
+        "Title" : "Information Technology",
+        "AudioLink" : "https://c.eop.edu.vn/dnn/eop/dictionary/1834/520d1142048t298l1.mp3",
+        "ImageLink" : "https://c.eop.edu.vn/media/auto/120/dictionary/1834/520d1141644t3811l0.jpg",
+        "VietnamTrans" : "Công nghệ thông tin",
+        "Description" : "Information technology has changed life and brought many benefits to people."
     }
 ]
