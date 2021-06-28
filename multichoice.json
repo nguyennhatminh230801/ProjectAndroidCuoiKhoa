@@ -1,112 +1,202 @@
 [
-    {
-        "sele_exer_id": "1",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "2",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "3",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "4",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "5",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "6",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "7",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "8",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "9",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    },
-    {
-        "sele_exer_id": "10",
-        "sele_exer_code": "abcde",
-        "title": "Choose the verb:",
-        "select_a": "cat",
-        "select_b": "dog",
-        "select_c": "select",
-        "select_d": "mouse",
-        "answer": "2",
-        "statement_code": "sta123"
-    }
+	{
+		"Question": "1",
+		"CauA": "Programming software allows programmers develop new programs.",
+		"CauB": "Programming software allows programmers to develop new programs.",
+		"CauC": "Programming software allows programmers developing new programs.",
+		"CauD": "Programming software allows programmers developed new programs.",
+		"Answer": 1
+	},
+	{
+		"Question": "2",
+		"CauA": "Programmers use programming language to write series of commands.",
+		"CauB": "Programmers use programming language writing series of commands.",
+		"CauC": "Programmers use programming language written series of commands.",
+		"CauD": "Programmers use programming language write series of commands.",
+		"Answer": 0
+	},
+	{
+		"Question": "3",
+		"CauA": "An IDE provides tools for written programs.",
+		"CauB": "An IDE provides tools for to write programs.",
+		"CauC": "An IDE provides tools for writing programs.",
+		"CauD": "An IDE provides tools for write programs.",
+		"Answer": 2
+	},
+	{
+		"Question": "4",
+		"CauA": "A linker provides links to additional information needed for programs run.",
+		"CauB": "A linker provides links to additional information needed for programs running.",
+		"CauC": "A linker provides links to additional information needed for programs to running.",
+		"CauD": "A linker provides links to additional information needed for programs to run.",
+		"Answer": 3
+	},
+	{
+		"Question": "5",
+		"CauA": "A text editor is a basic program for entering commands and code into a computer.",
+		"CauB": "A text editor is a basic program for enter commands and code into a computer.",
+		"CauC": "A text editor is a basic program enter commands and code into a computer.",
+		"CauD": "A text editor is a basic program entering commands and code into a computer.",
+		"Answer": 0
+	},
+	{
+		"Question": "Machine code is too difficult _________, understand and debug. Therefore, we use high-level languages.",
+		"CauA": "read",
+		"CauB": "to read",
+		"CauC": "reading",
+		"CauD": "ridden",
+		"Answer": 1
+	},
+	{
+		"Question": "Spyware can make your PC ________ more slowly.",
+		"CauA": "perform",
+		"CauB": "to perform",
+		"CauC": "performing",
+		"CauD": "performer",
+		"Answer": 0
+	},
+	{
+		"Question": "Our son is really interested in ________ computer languages.",
+		"CauA": "learn",
+		"CauB": "to learn",
+		"CauC": "learning",
+		"CauD": "learnt",
+		"Answer": 2
+	},
+	{
+		"Question": "Joe refuses _______ the project of developing the management software with me.",
+		"CauA": "do",
+		"CauB": "to do",
+		"CauC": "doing",
+		"CauD": "done",
+		"Answer": 1
+	},
+	{
+		"Question": "The technicians warned the employees not ____________ the cable.",
+		"CauA": "touch",
+		"CauB": "touching",
+		"CauC": "to touch",
+		"CauD": "touched",
+		"Answer": 2
+	},
+	{
+		"Question": "This program is too slow ________ the simulation.",
+		"CauA": "do",
+		"CauB": "for doing",
+		"CauC": "to do",
+		"CauD": "done",
+		"Answer": 2
+	},
+	{
+		"Question": "Dangerous viruses and spyware have made our computer systems _________ working for 5 hours.",
+		"CauA": "stop",
+		"CauB": "stopping",
+		"CauC": "to stop",
+		"CauD": "stopped",
+		"Answer": 0
+	},
+	{
+		"Question": "I went on a course ___________ how to be a better website designer.",
+		"CauA": "learn",
+		"CauB": "to learn",
+		"CauC": "learning",
+		"CauD": "learnt",
+		"Answer": 1
+	},
+	{
+		"Question": "Peter and Laura may not _______ to the IT conference.",
+		"CauA": "come",
+		"CauB": "to come",
+		"CauC": "coming",
+		"CauD": "came",
+		"Answer": 0
+	},
+	{
+		"Question": "Computers can’t ______ spoken English or any natural languages.",
+		"CauA": "understand",
+		"CauB": "to understand",
+		"CauC": "understanding",
+		"CauD": "understood",
+		"Answer": 0
+	},
+	{
+		"Question": "There are _______ models and configurations on Mac than there are Windows PC.",
+		"CauA": "less",
+		"CauB": "fewer",
+		"CauC": "many",
+		"CauD": "little",
+		"Answer": 1
+	},
+	{
+		"Question": "Windows computers aren’t ________ to get repaired as Mac computers.",
+		"CauA": "easier",
+		"CauB": "more easily",
+		"CauC": "as easy",
+		"CauD": "easiest",
+		"Answer": 2
+	},
+	{
+		"Question": "Apple Mac OS is ______ of all operating systems but that depends on personal preference.",
+		"CauA": "the most user-friendly",
+		"CauB": "more user-friendly",
+		"CauC": "most user-friendly",
+		"CauD": "user friendly",
+		"Answer": 0
+	},
+	{
+		"Question": "It is _______ that you bring your Mac computers to a certified Apple store.",
+		"CauA": "recommend",
+		"CauB": "recommending",
+		"CauC": "recommended",
+		"CauD": "to recommend",
+		"Answer": 2
+	},
+	{
+		"Question": "A lot of fantastic features and functions _______ on Windows 10.",
+		"CauA": "offer",
+		"CauB": "are offering",
+		"CauC": "to offer",
+		"CauD": "are offered",
+		"Answer": 3
+	},
+	{
+		"Question": "The _______ you pay for your Apple devices, the better built-in software you can access.",
+		"CauA": "more expensive",
+		"CauB": "less",
+		"CauC": "much",
+		"CauD": "more",
+		"Answer": 3
+	},
+	{
+		"Question": "The Retina displays on Mac computers are becoming _______ beautiful with each new version.",
+		"CauA": "more",
+		"CauB": "more and more",
+		"CauC": "most",
+		"CauD": "much",
+		"Answer": 1
+	},
+	{
+		"Question": "We strongly advise _______ building your own “Hackintosh” because it is vulnerable to security threats.",
+		"CauA": "for",
+		"CauB": "you",
+		"CauC": "against",
+		"CauD": "to",
+		"Answer": 2
+	},
+	{
+		"Question": "An average Mac computer can be the _______ as a high-end Windows computer.",
+		"CauA": "as expensive",
+		"CauB": "as cheap",
+		"CauC": "cheaper",
+		"CauD": "same price",
+		"Answer": 3
+	},
+	{
+		"Question": "We recommend you _______ to Windows 10 even though it’s no longer free.",
+		"CauA": "to upgrade",
+		"CauB": "upgrade",
+		"CauC": "upgrading",
+		"CauD": "upgraded",
+		"Answer": 0
+	}
 ]

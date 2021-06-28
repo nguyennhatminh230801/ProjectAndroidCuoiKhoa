@@ -47,6 +47,7 @@ public class LessonUnitActivity extends AppCompatActivity {
     TypeMultipleChoiceAdapter typeMultipleChoiceAdapter;
     TypeFillInfoAdapter typeFillInfoAdapter;
     JsonArrayRequest jsonArrayRequest;
+    static int test1 = 0;
 
     String URL = "https://raw.githubusercontent.com/vippes13/ProjectAndroidCuoiKhoa/main/vocabulary.json";
     String URL1 = "https://raw.githubusercontent.com/vippes13/ProjectAndroidCuoiKhoa/main/multichoice.json";
@@ -66,7 +67,7 @@ public class LessonUnitActivity extends AppCompatActivity {
 
         queue = Volley.newRequestQueue(this);
 
-        //Vocabulary();
+        Vocabulary();
 
         //MultipleChoice();
 
@@ -82,8 +83,8 @@ public class LessonUnitActivity extends AppCompatActivity {
                         JSONObject jsonObject = response.getJSONObject(i);
 
                         TypeFillInfo typeFillInfo = new TypeFillInfo(
-                                jsonObject.getString("request"),
-                                jsonObject.getString("answer")
+                                jsonObject.getString("Question"),
+                                jsonObject.getString("Answer")
                         );
 
                         typeFillInfoList.add(typeFillInfo);
@@ -170,12 +171,12 @@ public class LessonUnitActivity extends AppCompatActivity {
                     try {
                         JSONObject jsonObject = response.getJSONObject(i);
                         TypeMultipleChoice typeMultipleChoice = new TypeMultipleChoice(
-                                jsonObject.getString("title"),
-                                jsonObject.getString("select_a"),
-                                jsonObject.getString("select_b"),
-                                jsonObject.getString("select_c"),
-                                jsonObject.getString("select_d"),
-                                Integer.parseInt(jsonObject.getString("answer"))
+                                jsonObject.getString("Question"),
+                                jsonObject.getString("CauA"),
+                                jsonObject.getString("CauB"),
+                                jsonObject.getString("CauC"),
+                                jsonObject.getString("CauD"),
+                                jsonObject.getInt("Answer")
                         );
 
                         multipleChoiceList.add(typeMultipleChoice);
@@ -216,6 +217,23 @@ public class LessonUnitActivity extends AppCompatActivity {
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.success1);
         }
         mediaPlayer.start();
+
+
+        if(test1 % 3 == 0){
+            test1++;
+            test1 %= 3;
+            MultipleChoice();
+        }
+        else if(test1 % 3 == 1){
+            test1++;
+            test1 %= 3;
+            FillInfo();
+        }
+        else {
+            test1++;
+            test1 %= 3;
+            Vocabulary();
+        }
     }
 
 

@@ -1,72 +1,142 @@
 [
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "2",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    },
-    {
-        "essay_exer_id": "1",
-        "essay_code": "abcd",
-        "request": "go/ I/ school./ to",
-        "answer": "I go to school.",
-        "statement_code": "sta12"
-    }
+	{
+		"Question": "A router is/special computer/direct/communicating messages/several networks/connected together.",
+		"Answer": "A router is a special computer directing communicating messages when several networks are connected together."
+	},
+	{
+		"Question": "A bridge/hardware and software combination/use/connect/same type/ network.",
+		"Answer": "A bridge is a hardware and software combination used to connect the same type of network."
+	},
+	{
+		"Question": "A backbone/main transaction path/handling/major data traffic/and/connect/different LANs/ together.",
+		"Answer": "A backbone is the main transaction path handling the major data traffic and connects"
+	},
+	{
+		"Question": "A gateway/interface/enable/dissimilar network/communicate.",
+		"Answer": "A gateway is an interface enabling dissimilar network to communicate."
+	},
+	{
+		"Question": "A LAN/network/contain/ within/small area/for example/company department.",
+		"Answer": "A LAN is a network contained within a small area, for example a company department."
+	},
+	{
+		"Question": "A modem/device/convert/digital signals/enable/computer/transmit and receive/data.",
+		"Answer": "A modem is a device converting digital signals to enable a computer to transmit and receive data."
+	},
+	{
+		"Question": "Backbone/network transmission/path/handle/major/data/traffic.",
+		"Answer": "A backbone is a network transmission path handling major data traffic."
+	},
+	{
+		"Question": "Router/special/computer/direct/message/when/several/network/link.",
+		"Answer": "A router is a special computer directing messages when several networks are linked."
+	},
+	{
+		"Question": "Network/number/computer/peripheral/link/together.",
+		"Answer": "A network is a number of computers and peripherals linked together."
+	},
+	{
+		"Question": "LAN/network/connect/computer/over/small/distance/such as/ within/company.",
+		"Answer": "A LAN is a network connecting computers over a small distance such as within a company."
+	},
+	{
+		"Question": "Server/powerful/computer/store/many/program/share/by/all/client/in/network.",
+		"Answer": "A server is a powerful computer stored many programs shared by all the clients in the network."
+	},
+	{
+		"Question": "Reboot your PC to see if the problem recurs. (should)",
+		"Answer": "You should reboot your PC to see if the problem recurs."
+	},
+	{
+		"Question": "Use your PC’s on-board diagnostic and repair tools. (recommend)",
+		"Answer": "I recommend you to use your PC’s on-board diagnostic and repair tools."
+	},
+	{
+		"Question": "Note your system’s model name and serial number. (advise)",
+		"Answer": "I advise you to note your system’s model name and serial number."
+	},
+	{
+		"Question": "Visit the vendor’s website and check the FAQs. (best thing)",
+		"Answer": "The best thing to do is to visit the vendor’s website and check the FAQs."
+	},
+	{
+		"Question": "Have your system up and running and be near it when you call. (It is a good idea)",
+		"Answer": "It is a good idea to have your system up and running and be near it when you call."
+	},
+	{
+		"Question": "If you cannot access the Internet, check the cable connections. (recommend that)",
+		"Answer": "If you cannot access the Internet, I recommend that you check the cable connections."
+	},
+	{
+		"Question": "the technician / due to / recommend / and slowness / contact/ weak Wi-Fi signal, / can be / for help. / we / Disconnection / you / that",
+		"Answer": "Disconnection and slowness can be due to weak Wi-Fi signal, we recommend that you contact the technician for help."
+	},
+	{
+		"Question": "reboots / clean / and check / When / itself / the computer / again and again, / the fan / power supply.",
+		"Answer": "When the computer reboots itself again and again, clean the fan and check power supply."
+	},
+	{
+		"Question": "update / should / avoid / scan / for any viruses. / your computer / To / your anti-spyware / you / and / Blue Screen of Death (BSOD),",
+		"Answer": "To avoid Blue Screen of Death (BSOD), you should update your anti-spyware and scan your computer for any viruses."
+	},
+	{
+		"Question": "if all the connectors / and see / are / to do / properly / connected. / is / to check / The best thing / the back of the computer",
+		"Answer": "The best thing to do is to check the back of the computer and see if all the connectors are properly connected."
+	},
+	{
+		"Question": "unnecessary files / because / slows down / it/ with / is loaded / or corrupted registry. / Your computer",
+		"Answer": "Your computer slows down because it is loaded with unnecessary files or corrupted registry."
+	},
+	{
+		"Question": "Laser printers do not use ink. They have less image smearing problems than inkjet printers. (because)",
+		"Answer": "Because laser printers do not use ink, they have less image smearing problems than inkjet printers."
+	},
+	{
+		"Question": "Dot matrix printer does not have a very high resolution. It is an effective way of printing basic text documents. (although)",
+		"Answer": "Although Dot matrix printer does not have a very high resolution, it is an effective way of printing basic text documents."
+	},
+	{
+		"Question": "Dynamic microphones use a simple design. They are typically very durable and do not require electrical power. (therefore)",
+		"Answer": "Dynamic microphones use a simple design; therefore, they are typically very durable and do not require electrical power."
+	},
+	{
+		"Question": "HDMI cables are often more expensive than analog cables. They cost more to manufacture. (since)",
+		"Answer": "HDMI cables are often more expensive than analog cables since they cost more to manufacture."
+	},
+	{
+		"Question": "Personal laser printers cost less than ordinary laser printer. They weigh less and require less space. (besides)",
+		"Answer": "Personal laser printers cost less than ordinary laser printer; besides, they weigh less and require less space."
+	},
+	{
+		"Question": "It/ difficult/ write/ programs/ use/ low-level languages.",
+		"Answer": "It is difficult to write programs using low-level languages."
+	},
+	{
+		"Question": "We/ be/ interested in/ take part in IT day.",
+		"Answer": "We are interested in taking part in the IT Day."
+	},
+	{
+		"Question": "He/ should/ take/ course/ web design.",
+		"Answer": "He should take a course of web design."
+	},
+	{
+		"Question": "Write code/ be/ not/ easy.",
+		"Answer": "Writing code is not easy."
+	},
+	{
+		"Question": "Firewall/ be/ good method/ protect/ your computer/ hackers/ viruses.",
+		"Answer": "Firewall is a good method to protect your computer from hackers and viruses."
+	},
+	{
+		"Question": "The development/ technology/ make/ way/ work/ change.",
+		"Answer": "The development of technology makes the way of work change."
+	},
+	{
+		"Question": "Our son/ go/ London University/ study/ computer science/ 2016.",
+		"Answer": "Our son went to London University to study computer science in 2016."
+	},
+	{
+		"Question": "Tony/ always/ want/ work/ software engineer/ Microsoft.",
+		"Answer": "Tony always wants to work as a software engineer in Microsoft."
+	}
 ]
